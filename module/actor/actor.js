@@ -420,8 +420,8 @@ export class CyberpunkActor extends Actor {
       }
     }
 
-    // Check luck recovery (8 hours = 28,800,000 ms)
-    const LUCK_RECOVERY_MS = 8 * 60 * 60 * 1000;
+    // Check luck recovery (5 hours = 18,000,000 ms)
+    const LUCK_RECOVERY_MS = 5 * 60 * 60 * 1000;
     if (stats.luck.spentAt && Date.now() - stats.luck.spentAt >= LUCK_RECOVERY_MS) {
       // Reset spent luck (will be persisted on next update)
       this.update({
