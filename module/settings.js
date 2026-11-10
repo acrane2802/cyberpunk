@@ -17,15 +17,27 @@ export function registerSystemSettings() {
     scope: "world",
     config: true,
     type: String,
-    default: "2045-01-01 00:00:00"
+    default: "2020-01-01 00:00:00"
   });
 
   /**
-   * Core hummanty tracking.
+   * Core humanty tracking.
    */
   game.settings.register("cyberpunk", "useDefaultHumanity", {
-    name: "Use core 2020 hummanity",
-    hint: "Changes hummanity to 10pts per 1 EMP",
+    name: "Use Core 2020 Humanity",
+    hint: "Changes humanity to 10pts per 1 EMP",
+    scope: "world",
+    config: true,
+    type: Boolean,
+    default: false
+  });
+
+  /**
+   * TODO: Use this option to disable the non-core systems from the Ianus Games supplements
+   */
+  game.settings.register("cyberpunk", "disableIanusGamesSystems", {
+    name: "Disable Ianus Games Systems",
+    hint: "Disables Ianus Games Systems like Sleep, etc",
     scope: "world",
     config: true,
     type: Boolean,
