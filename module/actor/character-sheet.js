@@ -758,6 +758,9 @@ export class CyberpunkCharacterSheet extends HandlebarsApplicationMixin(ActorShe
       }, 0);
       sheetData.charPoints = charPoints;
 
+      const maxCharPoints = game.settings.get("cyberpunk", "maxCharacterPoints");
+      sheetData.maxCharPoints = maxCharPoints;
+
       // Career and Pickup points from skills (reuse roleItem fetched above)
       const allSkills = this.actor.itemTypes.skill || [];
       const careerSkillNames = new Set();

@@ -29,7 +29,16 @@ export function registerSystemSettings() {
     scope: "world",
     config: true,
     type: Boolean,
-    default: false
+    default: true
+  });
+
+  game.settings.register("cyberpunk", "maxCharacterPoints", {
+    name: "Max Character Points for Stats",
+    hint: "Sets the maximum character points for players' sheets",
+    scope: "world",
+    config: true,
+    type: Number,
+    default: 50
   });
 
   /**
