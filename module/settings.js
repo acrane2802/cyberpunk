@@ -37,7 +37,7 @@ export function registerSystemSettings() {
    */
   game.settings.register("cyberpunk", "disableIanusGamesSystems", {
     name: "Disable Ianus Games Systems",
-    hint: "Disables Ianus Games Systems like Sleep, etc",
+    hint: "!!!NOT IMPLEMENTED YET!!! Disables Ianus Games Systems like Sleep, etc",
     scope: "world",
     config: true,
     type: Boolean,

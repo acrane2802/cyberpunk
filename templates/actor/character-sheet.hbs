@@ -259,13 +259,14 @@
 
           <div class="tab state {{#if (eq activeTab 'state')}}active{{/if}}" data-group="primary" data-tab="state">
             <div class="gear-container">
+                {{!--
               <div class="section-block">
                 <header class="tab-header">
                   <span class="tab-title">STATE</span>
                   <img class="tab-badge" src="systems/cyberpunk/img/ui/badge-state.svg" alt="">
                 </header>
                 <div class="tab-content state-row">
-                  {{!-- Stress --}}
+                  {{!-- Stress
                   <div class="state-block" data-tooltip-name="Stress" data-flavor="{{stressTooltipFlavor}}" data-calc="{{stressTooltipCalc}}" data-token-path="@stress">
                     <span class="state-label">Stress</span>
                     <div class="state-value-row">
@@ -275,7 +276,7 @@
                     </div>
                     <span class="state-status">{{stressStatus}}</span>
                   </div>
-                  {{!-- Fright --}}
+                  {{!-- Fright
                   <div class="state-block" data-tooltip-name="Fright" data-flavor="{{frightTooltipFlavor}}" data-calc="{{frightTooltipCalc}}" data-token-path="@fright">
                     <span class="state-label">Fright</span>
                     <div class="state-value-row">
@@ -285,7 +286,7 @@
                     </div>
                     <span class="state-status">{{frightStatus}}</span>
                   </div>
-                  {{!-- Fatigue --}}
+                  {{!-- Fatigue
                   <div class="state-block" data-tooltip-name="Fatigue" data-flavor="{{fatigueTooltipFlavor}}" data-calc="{{fatigueTooltipCalc}}" data-token-path="@fatigue">
                     <span class="state-label">Fatigue</span>
                     <div class="state-value-row">
@@ -295,7 +296,7 @@
                     </div>
                     <span class="state-status">{{fatigueStatus}}</span>
                   </div>
-                  {{!-- Sleep --}}
+                  {{!-- Sleep
                   <div class="state-block" data-tooltip-name="Sleep" data-flavor="Days the character has stayed awake." data-calc="{{sleepTooltipCalc}}" data-token-path="@sleep">
                     <span class="state-label">Sleep</span>
                     <div class="state-value-row">
@@ -330,7 +331,7 @@
                   {{/each}}
                 </div>
               </div>
-
+                --}}
               {{> "systems/cyberpunk/templates/actor/parts/cumulative-effects-block.hbs"}}
 
               {{> "systems/cyberpunk/templates/actor/parts/state-effects-block.hbs"}}
